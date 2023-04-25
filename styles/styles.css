@@ -1,3 +1,24 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+.main-space{
+    margin-top: 40px;
+    
+}
+
+.top-line{
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    background-color: aquamarine;
+
+}
+
 .work-space{
     display: flex;
     flex: 1;
@@ -18,16 +39,18 @@ img{
 }
 
 .girl{
+    width: 400px;
     margin: 10px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
     border-radius: 20px;
     border-color: red;
     border:#0d8717 5px solid;
     justify-content: center;
     background-color: #29bbff;
     }
-.girl :last-child{
-    align-items:flex-end;
-}
+
 .girl img{
     max-width: 400px;
     
@@ -50,9 +73,10 @@ img{
 
 
 .button{
+    height: 30px;
     flex: 1;
     justify-content: center;
-    align-items: center;
+    
 
 	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
 	background-color:#2dabf9;
@@ -78,8 +102,8 @@ img{
 .buttons{
     display: flex;
     flex: 1;
-    justify-content: center;
-    align-items:flex-end;
+    align-items: flex-end;
+    
 }
 
 .buttons :last-child{

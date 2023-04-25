@@ -1,0 +1,18 @@
+
+.icon::before{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+    content:'';
+}
+
+.icon.home::before{
+    background-image: url('../images/icons/home_white.png');
+
+}
+
+.icon.home:hover::before{
+    background-image: url('../images/icons/home_black.png');
+}
+
