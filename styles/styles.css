@@ -85,7 +85,8 @@ img{
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-size: 20px;
+    font-family:Arial;
 	width: 1;
 	text-decoration:none;
 
