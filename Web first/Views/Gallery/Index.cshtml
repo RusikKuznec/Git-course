@@ -1,9 +1,17 @@
-﻿@model GalleryIndexVeiwModel
+﻿@using Web_first.Models
+
+@model List<ImageIndexViewModel>;
 
 @{
     Layout = "/Views/Shared/_LayoutGallery.cshtml";
 }
 
 <div>
-    Сейчас @Model.DayOfWeek день недели ? секунд @Model.Seconds? назва @Model.MounthName
+    Сейчас есть такие картинки
+
+</div>
+<div>
+    @foreach (var image in Model){
+        <a href=/Gallery/AddImage?id=@image.Id>@image.Name</a>
+    };
 </div>

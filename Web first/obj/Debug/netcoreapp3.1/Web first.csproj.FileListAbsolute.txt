@@ -350,3 +350,4 @@ C:\Users\Ruslan\Desktop\code\Web first\Web first\obj\Debug\netcoreapp3.1\Web fir
 C:\Users\Ruslan\Desktop\code\Web first\Web first\obj\Debug\netcoreapp3.1\Web first.genruntimeconfig.cache
 C:\Users\Ruslan\Desktop\code\Web first\Web first\obj\Debug\netcoreapp3.1\Razor\Views\Gallery\Index.cshtml.g.cs
 C:\Users\Ruslan\Desktop\code\Web first\Web first\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutGallery.cshtml.g.cs
+C:\Users\Ruslan\Desktop\code\Web first\Web first\obj\Debug\netcoreapp3.1\Razor\Views\Gallery\AddImage.cshtml.g.cs
