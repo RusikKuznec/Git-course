@@ -1,11 +1,22 @@
-﻿@model ImageUrlIndexViewModel
-
-
+﻿@model AddImageViewModel
+ 
 
 @{
     Layout = "/Views/Shared/_LayoutGallery.cshtml";
 }
 
-<div>
-    <img src="@Model.Url" />
-</div>
+<form action="/Gallery/AddImage" method="post">
+    <div>
+        Name: @Html.TextBoxFor(x => x.Name)
+    </div>
+    <div>
+        Rate: @Html.TextBoxFor(x => x.Rate)
+    </div>
+    <div>
+        Url: @Html.TextBoxFor(x => x.Url)
+    </div>
+    <input type="submit" value="Create" />
+</form>
+
+
+

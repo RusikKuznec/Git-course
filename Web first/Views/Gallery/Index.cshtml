@@ -1,6 +1,4 @@
-﻿@using Web_first.Models
-
-@model List<ImageIndexViewModel>;
+﻿@model List<ImageIndexViewModel>;
 
 @{
     Layout = "/Views/Shared/_LayoutGallery.cshtml";
@@ -12,6 +10,11 @@
 </div>
 <div>
     @foreach (var image in Model){
-        <a href=/Gallery/AddImage?id=@image.Id>@image.Name</a>
-    };
+        <div>
+            <a href=/Gallery/ShowImage?id=@image.Id>@image.Name</a>
+        </div>
+    }
+</div>
+ <div>
+     <a href=/Gallery/AddImage>Add Image</a>
 </div>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ruslan\\Desktop\\code\\Web first\\Web first\\Web first.csproj": {}
+    "C:\\Users\\Ruslan\\Desktop\\code\\git cours\\Web first\\Web first.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ruslan\\Desktop\\code\\Web first\\Web first\\Web first.csproj": {
+    "C:\\Users\\Ruslan\\Desktop\\code\\git cours\\Web first\\Web first.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ruslan\\Desktop\\code\\Web first\\Web first\\Web first.csproj",
+        "projectUniqueName": "C:\\Users\\Ruslan\\Desktop\\code\\git cours\\Web first\\Web first.csproj",
         "projectName": "Web first",
-        "projectPath": "C:\\Users\\Ruslan\\Desktop\\code\\Web first\\Web first\\Web first.csproj",
+        "projectPath": "C:\\Users\\Ruslan\\Desktop\\code\\git cours\\Web first\\Web first.csproj",
         "packagesPath": "C:\\Users\\Ruslan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ruslan\\Desktop\\code\\Web first\\Web first\\obj\\",
+        "outputPath": "C:\\Users\\Ruslan\\Desktop\\code\\git cours\\Web first\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ruslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,20 @@
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[3.1.22, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
             }
           },
           "imports": [
