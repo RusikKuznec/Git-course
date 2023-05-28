@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Web_first.EfStuff;
+using Web_first.EfStuff.Repositories;
 
 namespace Web_first
 {
@@ -27,7 +28,8 @@ namespace Web_first
 
             var connectString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=WebFirst;Integrated Security=True;";
             services.AddDbContext<WebContext>(x => x.UseSqlServer(connectString));
-            
+            services.AddScoped<ImageRepository>(x =>
+                new ImageRepository(x.GetService<WebContext>()));
             services.AddControllersWithViews();
         }
 
