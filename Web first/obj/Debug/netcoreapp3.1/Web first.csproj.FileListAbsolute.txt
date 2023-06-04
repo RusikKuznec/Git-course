@@ -735,3 +735,5 @@ C:\Users\Ruslan\Desktop\code\git cours\Web first\bin\Debug\netcoreapp3.1\runtime
 C:\Users\Ruslan\Desktop\code\git cours\Web first\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Ruslan\Desktop\code\git cours\Web first\obj\Debug\netcoreapp3.1\Razor\Views\Gallery\ShowImage.cshtml.g.cs
 C:\Users\Ruslan\Desktop\code\git cours\Web first\obj\Debug\netcoreapp3.1\Razor\Views\Gallery\AddImage.cshtml.g.cs
+C:\Users\Ruslan\Desktop\code\git cours\Web first\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Ruslan\Desktop\code\git cours\Web first\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll

@@ -30,6 +30,8 @@ namespace Web_first
             services.AddDbContext<WebContext>(x => x.UseSqlServer(connectString));
             services.AddScoped<ImageRepository>(x =>
                 new ImageRepository(x.GetService<WebContext>()));
+            services.AddScoped<ImageCommentRepository>(x =>
+                new ImageCommentRepository(x.GetService<WebContext>()));
             services.AddControllersWithViews();
         }
 

@@ -14,10 +14,12 @@ namespace Web_first.Controllers
     public class GalleryController : Controller
     {
         private ImageRepository _imageRepository;
+        private ImageCommentRepository _imageCommentRepository;
 
-        public GalleryController(ImageRepository imageRepository)
+        public GalleryController(ImageRepository imageRepository, ImageCommentRepository imageCommentRepository)
         {
             _imageRepository = imageRepository;
+            _imageCommentRepository = imageCommentRepository;
         }
 
         public IActionResult Index()
@@ -37,7 +39,9 @@ namespace Web_first.Controllers
             var dbImage = _imageRepository.Get(id);
             var model = new ImageUrlIndexViewModel()
             {
-                Url = dbImage.Url
+                Id=dbImage.Id,
+                Url = dbImage.Url,
+                Comments = dbImage.Comments.Select(x => x.Comment).ToList()
             };
             
 
@@ -60,9 +64,32 @@ namespace Web_first.Controllers
                 Url = newImage.Url
             };
 
+            var adminComment = new ImageComment
+            {
+                Comment = "First comment (admin)",
+                
+            };
+
+            dbImage.Comments = new List<ImageComment>
+            {
+                adminComment
+            };
+
             _imageRepository.Save(dbImage);
 
             return View();
+        }
+        public IActionResult AddComment(int imageId, string text)
+        {
+            var image = _imageRepository.Get(imageId);
+            var comment = new ImageComment
+            {
+                Comment = text,
+                Image = image
+            };
+
+            _imageCommentRepository.Save(comment);
+            return RedirectToAction("ShowImage", new {id = imageId});
         }
     }
 }

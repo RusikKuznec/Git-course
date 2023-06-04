@@ -1,3 +1,11 @@
 ﻿body{
     background-color:bisque;
 }
+
+.gallery{
+    display:flex;
+}
+
+img{
+    max-width: 300px;
+}
